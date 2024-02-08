@@ -1,0 +1,15 @@
+.tong img{
+    width: 30%;
+}
+
+#next, #back{
+    position:fixed;
+    left: 1.75%; 
+    bottom: 73.25%;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    }
+.tong #next{
+    left: 28%;
+}

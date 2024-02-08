@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .font_chu{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode'
+    }
+    .mau_chu{
+    color: rgb(128, 19, 0);
+    }
+    .co_chu{
+    font-size: 30px;
+    }
+</style>
+<body>
+    
+    <h1 class="font_chu" id="td1">Đây là web tôi.</h1> 
+    <button onclick="tonho()">Lets try</button>
+    <script>
+    var pt=document.getElementById("td1"); 
+    pt.classList.add("mau_chu", "co_chu"); 
+    function tonho(){
+    pt.classList.toggle("co_chu");
+    }
+    </script>
+    <button style="
+    width: 70px;
+    background-color: rgba(218, 210, 210, 0.3);
+    border: 3px solid black;
+    cursor: pointer;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;"
+>
+    <a href="https://khoabeo100.github.io/LaptrinhWeb/">
+    <img src="home1.png" style="width: 60%;"></a>
+</button>
+
+</body>
+</html>

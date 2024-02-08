@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form đăng kí</title>
+  <style>
+    body{
+        line-height: 40px;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<h1 style="color: orange;">FORM ĐĂNG KÝ</h1>
+<form id="registrationForm">
+  <label for="firstName">Họ:</label>
+  <input type="text" id="firstName" name="firstName" required>
+
+  <br>
+  
+  <label for="lastName">Tên:</label>
+  <input type="text" id="lastName" name="lastName" required>
+
+  <br>
+<div>
+  <label for="dob">Ngày sinh:</label>
+  Ngày
+  <select id="ngay" name="ngay" required></select>
+  Tháng
+  <select id="thang" name="thang" required></select>
+  Năm sinh
+  <select id="nam" name="nam" required></select>
+  <div id="ngaysinhError" class="error"></div>
+  <script src="namsinh.js"></script>
+</div>
+  <label>Giới tính:</label>
+  <input type="radio" id="males" name="genders" value="male" required>
+  <label for="male">Nam</label>
+  <input type="radio" id="females" name="genders" value="female" required>
+  <label for="female">Nữ</label>
+
+  <br>
+
+  <label for="phone">Số điện thoại:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+  <span class="error" id="phoneError"></span>
+
+  <br>
+
+  <label>Sở Thích:</label>
+        <input type="checkbox" id="docsach" name="sothich" value="docsach">
+        <label for="docsach">Đọc Sách</label>
+        <input type="checkbox" id="xemphim" name="sothich" value="xemphim">
+        <label for="xemphim">Xem Phim</label>
+        <input type="checkbox" id="nghenhac" name="sothich" value="nghenhac">
+        <label for="nghenhac">Nghe Nhạc</label>
+        <input type="checkbox" id="dabong" name="sothich" value="dabong">
+        <label for="dabong">Đá Bóng</label>
+        <input type="checkbox" id="khac" name="sothich" value="khac">
+  <br>
+
+  <label for="other">Khác:</label>
+  <input type="text" id="other" name="other">
+
+  <br>
+
+  <button type="button" onclick="validateForm()">Submit</button>
+  <button type="button" onclick="resetForm()">Reset</button>
+
+</form>
+<button style="
+        width: 70px;
+        background-color: rgba(218, 210, 210, 0.3);
+        border: 3px solid black;
+        cursor: pointer;
+        height: 70px;
+        border-radius: 10px;
+        border: none;
+        display: inline-block;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;"
+    >
+        <a href="https://khoabeo100.github.io/LaptrinhWeb/">
+        <img src="home1.png" style="width: 60%;"></a>
+    </button>
+
+<script src="main.js"></script>
+</body>
+</html>

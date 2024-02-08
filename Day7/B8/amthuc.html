@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<title>Bai8 Day7</title>
+        <script src="amthuc.js"></script>
+		<link rel="stylesheet" type="text/css" href="amthuc.css">
+		<script src="https://kit.fontawesome.com/3d2fa990ba.js" crossorigin="anonymous"></script>
+</head>
+<body onload = "load_images();">
+	<div id="navbar">
+        <a href="#home" id="logo">
+            <img src="logo2.png" style="height: 100%;">
+        </a>
+        <div id="navbar-right">
+            <a class="nav navv" href="#about">About</a>
+            <a class="nav navv" href="#Foods">Foods</a>
+            <a class="nav navv" href="#Ingredient">Ingredient</a>
+          
+        </div>
+    </div>
+   
+    <div class="navbarrr">
+        <div class="topnav">
+            <a href="#home">
+                <img src="logo2.png" style="height: 40px; margin-left: 20px;">
+            </a>
+            <a href="javascript:void(0);" class="icon"  class="openbtn" onclick="openNav()">
+            <i class="fa fa-bars" style="color: white;"></i>
+            </a>
+        </div>
+        <div id="mySidebar" class="sidebar" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#about">About</a>
+            <a href="#Foods">Foods</a>
+            <a href="#Ingredient">Ingredient</a>
+           
+          </div>
+    </div>   
+    <div id="home">
+
+        <div class="hmcontent wrap">
+            <div class="hmtxt">
+                <h1>
+                    Vietnamese<br>CUISINE
+                </h1>
+                <h2>
+                    Delicious !!!
+                </h2>
+            </div>
+            <div class="hmimg">
+                <img src="food1.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <img src="texture.jpg" class="txture">
+        <div class="wrap">
+            <h1 class="title">About </h1>
+            <div class="abt">
+                <div class="abtimg">
+                    <img src="food4.jpg" width="100%">
+                </div>
+                <div class="abttxt">
+                    <p>
+                        Ẩm thực Việt Nam, với đa dạng độc đáo và sáng tạo, là một phần không thể thiếu trong văn hóa đất nước. Đây không chỉ là việc "ăn uống" mà còn là một trải nghiệm văn hóa đậm chất. Các món ăn như phở, bún riêu, bánh mì, cơm niêu... không chỉ là ngon miệng mà còn là những biểu tượng của sự sáng tạo, tinh tế trong việc kết hợp nguyên liệu.
+						<br>
+						<br>
+						Ẩm thực Việt Nam là sự hòa quyện giữa những giá trị truyền thống và sự đổi mới, đồng thời là nguồn cảm hứng cho nhiều đầu bếp sáng tạo. Với sự phong phú và phức tạp trong cách chế biến, ẩm thực Việt Nam không chỉ hấp dẫn lòng người qua vị giác mà còn chứa đựng những giá trị tinh thần sâu sắc, góp phần làm nổi bật văn hóa ẩm thực Việt trong tầm nhìn quốc tế.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div id="Foods">
+        <img src="texture.jpg" class="txture">
+        <div class="wrap">
+            <h1 class="title">Foods</h1>
+            <div class="picture">
+                <div class="pic">
+                    <img src="phobo.jpg" class="picimg">
+                    <div class="pictxt">
+                        <h1>
+                            Phở bò
+                        </h1>
+                        <p>
+							Sự hòa quyện độc đáo giữa hương thơm nước dùng và sự mềm mại của thịt bò, mang đến trải nghiệm ẩm thực đậm đà và đặc trưng của Việt Nam.                        </p>
+                    </div>
+                </div>                    
+                <div class="pic">
+                    <img src="bmi.jpg" class="picimg">
+                    <div class="pictxt">
+                        <h1>
+                            Bánh mì
+                        </h1>
+                        <p>
+                            Bánh mì - hòa quyện vị ngon, vỏ giòn, là biểu tượng ẩm thực phổ biến và đặc trưng của Việt Nam.
+                        </p>
+                    </div>
+                </div>                    
+                <div class="pic">
+                    <img src="bcha.jpg" class="picimg">
+                    <div class="pictxt">
+                        <h1>
+                            Bún chả
+                        </h1>
+                        <p>
+							Bún chả - hương vị đặc trưng của bún mềm và chả giòn, tạo nên một trải nghiệm ẩm thực ngon lành, đậm chất miền Bắc Việt Nam.                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div id="Ingredient">
+        <img src="texture.jpg" class="txture">
+        <div class="wrap">
+            <h1 class="title">Ingredient</h1>
+            <div class="picture">
+                <div class="pic">
+                    <img src="https://img.freepik.com/premium-vector/engraving-rice-ad-template_317396-2222.jpg?w=996" class="picimg">
+                    <div class="pictxt">
+                        
+                        <h1>
+                            Gạo
+                        </h1>
+                        <p>
+							Nguyên liệu cơ bản của ẩm thực Việt Nam, là nguồn cung cấp chính cho cơm và nhiều món ngon khác.                         </p>
+                    </div>
+                </div>                
+                <div class="pic">
+                    <img src="https://img.freepik.com/premium-vector/cute-japanese-soy-sauce-cartoon-illustration_426162-311.jpg?w=826" class="picimg">
+                    <div class="pictxt">
+                        
+                        <h1>
+                            Nước mắm
+                        </h1>
+                        <p>
+							Nước mắm thực sự là một phần không thể thiếu trong ẩm thực Việt Nam, làm nổi bật hương vị đặc trưng và đậm đà cho nhiều món ăn.                        </p>
+                    </div>
+                </div>                
+                <div class="pic">
+                    <img src="https://img.freepik.com/free-vector/papaya-salad-banner-logo-cartoon-art-illustration_56104-843.jpg?w=826&t=st=1706641260~exp=1706641860~hmac=71145b5a08fa4bba62d92e6dbced173afc6034acd966b3b38753f96214759384" class="picimg">
+                    <div class="pictxt">
+                    
+                        <h1>
+                            Gia vị
+                        </h1>
+                        <p>
+							Sự kết hợp linh hoạt của những gia vị này tạo nên hương vị đặc trưng và phong phú cho ẩm thực Việt.                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+	<button style="
+    width: 70px;
+    background-color: rgba(218, 210, 210, 0.3);
+    border: 3px solid black;
+    cursor: pointer;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;"
+>
+    <a href="https://khoabeo100.github.io/LaptrinhWeb/">
+    <img src="home1.png" style="width: 60%;"></a>
+</button>
+</body>
+</html>

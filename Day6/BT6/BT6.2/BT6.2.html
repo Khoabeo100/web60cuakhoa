@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BT6.2 Day 6</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Bé tập tính</h1>
+
+        <div class="form">
+            <form class="calculatorForm">
+                <h3>Phép cộng</h3>
+                <input class="operand" required />
+                <button class="operator">+</button>
+                <input class="operand" required />
+                <button class="btn1" type="button" onclick="calculate('+', this)">=</button>
+                <div class="result"></div>
+            </form>
+
+            <form class="calculatorForm">
+                <h3>Phép trừ</h3>
+                <input class="operand" required />
+                <button class="operator">-</button>
+                <input class="operand" required />
+                <button class="btn1" type="button" onclick="calculate('-', this)">=</button>
+                <div class="result"></div>
+            </form>
+
+            <form class="calculatorForm">
+                <h3>Phép nhân</h3>
+                <input class="operand" required />
+                <button class="operator">*</button>
+                <input class="operand" required />
+                <button class="btn1" type="button" onclick="calculate('*', this)">=</button>
+                <div class="result"></div>
+            </form>
+
+            <form class="calculatorForm">
+                <h3>Phép chia</h3>
+                <input class="operand" required />
+                <button class="operator">/</button>
+                <input class="operand" required />
+                <button class="btn1" type="button" onclick="calculate('/', this)">=</button>
+                <div class="result"></div>
+            </form>
+        </div>
+
+        <div id="calculationContainer">
+            <div class="content">
+                <h2 class="text1">Phép cộng</h2>
+                <div id="calculationContainer1"></div>
+            </div>
+            <div class="content">
+                <h2 class="text2">Phép trừ</h2>
+                <div id="calculationContainer2"></div>
+            </div>
+            <div class="content">
+                <h2 class="text3">Phép nhân</h2>
+                <div id="calculationContainer3"></div>
+            </div>
+            <div class="content">
+                <h2 class="text4">Phép chia</h2>
+                <div id="calculationContainer4"></div>
+            </div>
+        </div>
+        <button style="
+        width: 70px;
+        background-color: rgba(218, 210, 210, 0.3);
+        border: 3px solid black;
+        cursor: pointer;
+        height: 70px;
+        border-radius: 10px;
+        border: none;
+        display: inline-block;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;"
+    >
+        <a href="https://khoabeo100.github.io/LaptrinhWeb/">
+        <img src="home1.png" style="width: 60%;"></a>
+    </button>
+        <script src="main.js"> </script>
+    </body>
+</html>
