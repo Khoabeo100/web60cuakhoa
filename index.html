@@ -51,7 +51,7 @@
                 <p>Hi, I'm Nguyễn Đức Khoa, a student majoring in Information Technology at HaNoi Metropolitan University. I'm passionate about technology and always seeking opportunities to learn and develop skills. Nice to meet you!</p>
                 
                 <div class="button12" >
-                    <button onclick="goto()" >See More</button>
+                    <button3 onclick="goto()" >See More</button>
                 </div>
                 
                 
@@ -432,7 +432,61 @@
 </div>
 
 
-
+<div class="tong8" id="contact">
+    <div class="main-title">
+        <h1> Contact</h1>
+    </div>
+</div>
+<div class="tong9">
+    <div class="container71">
+        <div class="left">
+            <form id="mainForm" novalidate>
+                <h2>Hi, Nice To Meet You!!!</h2>
+                <div class="form-control">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" autocomplete="off">
+                    <i class="icon"></i>
+                </div>
+    
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" autocomplete="off">
+                    <i class="icon"></i>
+                </div>
+    
+                <div class="form-control">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone" autocomplete="off">
+                    <i class="icon"></i>
+                </div>
+    
+                <div class="form-control">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Enter your message"></textarea>
+                    <i class="icon"></i>
+                </div>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+            
+        <div class="right">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7447.841983076494!2d105.7918006935791!3d21.035847100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3f57fc23d1%3A0xf813dfd05dfa4078!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7pyDEkcO0IEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1707378132128!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+</div>
+</div>
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button1">&times;</span>
+        <h2>Success!</h2>
+        <p>Your message has been sent successfully.</p>
+    </div>
+</div>
 <footer>
     <div class="container7" id="contact">
         <div class="row">
@@ -456,27 +510,42 @@
             </div>
 
             <div class="footer-col">
-                <h4>Help</h4>
-                <ul>
-                    <li><a href="">Support</a></li>
-                    <li><a href="">Troubleshooting</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Status</a></li>
+                <h4>Address</h4>
+                <div class="contactinfo">
+                    <div class="infobox">
+                        <div class="iconinfo">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="textinfo">
+                            <p>98 phố Dương Quảng Hàm, Quan Hoa, Cầu Giấy, Hà Nội</p>
+                        </div>
+                    </div>
+            
+                    <div class="infobox">
+                        <div class="iconinfo">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="textinfo">
+                            <a href="tel:+89 12345678">+89 12345678</a>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="infobox">
+                        <div class="iconinfo">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="textinfo">
+                            <a href="mailto:Example@gmail.com">Example@gmail.com</a>
+                        </div>
+                    </div>
                     
-                </ul>
+                </div>
             </div>
             
 
             <div class="footer-col">
-                <h4>Newsletter</h4>
-                <div class="container8">
-                <form action="">
-                    <input type="text" placeholder="Your Name" class="inputName">
-                    <input type="email" placeholder="Your Email" class="inputEmail">
-                    <input type="submit" value="Submit" class="inputSubmit">
-                </form>
-                </div>
-
+                <h4>Social</h4>
                 <div class="icons">
                     <a href="https://www.facebook.com/khoabeo2002/" target="_blank">
                        <div class="layer">
@@ -532,19 +601,19 @@
 
 
             </div>
-        </div>
+        
             
     </div>
 </footer>
 
-    
+
 
     <button id="toTop">
         <i class="fa-solid fa-chevron-up fa-xl" style="color: white;"></i>
     </button>
     
     <script src="style.js"></script>
-    
+    <script src="form.js"></script>
 
 </body>
 </html>

@@ -125,3 +125,7 @@ function goto() {
   // Sử dụng phương thức scrollIntoView để chuyển đến phần đó
   pre.scrollIntoView({ behavior: 'smooth' });
 }
+
+
+
+
