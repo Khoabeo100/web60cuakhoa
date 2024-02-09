@@ -1540,7 +1540,7 @@ footer .row hr{
   }
 
   .tong9 .right .map iframe{
-    width: 50%;
+    display: none;
   }
 }
 
